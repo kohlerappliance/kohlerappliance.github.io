@@ -65,7 +65,7 @@ body {
 }
 
 .logo img {
-  max-width: 350px;      /* adjust to the size you want */
+  max-width: 800px;      /* adjust to the size you want */
   width: 100%;           /* let it grow to the max‑width */
   height: auto;          /* keep aspect ratio */
 }
