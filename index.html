@@ -1,49 +1,205 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kohler Appliance is the High Country's favorite Appliance store.">
-    <meta property="og:url" content="https://kohlerappliance.com/"/ >
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Kohler Appliance is the High Country's favorite Appliance store"/>
-    <meta property="og:title" content="Kohler Appliance"/>
-    <meta property="og:image" content="https://compudocnc.com/assets/images/logo_xlarge.png"/>	
-    <meta property="og:image:alt" content="Kohler Appliance"/> 
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Kohler Appliance</title>
-  </head>
-  <body>
-    <section class="topcontact">
-      <p> CALL NOW (828)-733-5858 </p>
-    </section>
-    <section class="header">
-      <a href="index.html"><img src="/assets/img/kohlerlogonavy.png" alt="Kohler Appliance"></a>
-          <nav id="navbar">
-            <div class="nav-links">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-            </div>
-        </nav>
-        <div class="address">
-        <p> 170 Linville Street<br>Newland, NC 28657</p>
-        </div>
-      </section>
-      <section class="about">
-        <h1>Kohler Appliance</h1>
-        <H2>The High Countrys most trusted Appliance repairs and sales for over 20 years.</p>
-         <div class="google_location">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.3703140628695!2d-81.9296915234312!3d36.08445997246001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8850938c16494b9b%3A0xba285b35c469ba95!2s170%20Linville%20St%2C%20Newland%2C%20NC%2028657!5e0!3m2!1sen!2sus!4v1684126348864!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
-        </section>
-      <section class="footer">
-        
+<html lang="en">
+<head>
+  <!-- ==== Core meta ==== -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"            content="width=device-width, initial-scale=1.0">
+  <meta name="description"         content="Kohler Appliance – Newland, NC’s trusted appliance store & repair shop. 20+ years of sales, installation and service for refrigerators, washers, dryers, ranges & more.">
+  <meta name="keywords"            content="appliance store, appliance repair, refrigerator repair, washer dryer repair, Newland NC, High Country appliances">
 
-      </section>
-  </body>
+  <!-- ==== Open Graph / Social ==== -->
+  <meta property="og:url"          content="https://kohlerappliance.com/">
+  <meta property="og:type"         content="website">
+  <meta property="og:title"        content="Kohler Appliance – Appliance Store & Repair in Newland, NC">
+  <meta property="og:description"  content="High Country’s most trusted appliance sales and repair service for over 20 years.">
+  <meta property="og:image"        content="https://compudocnc.com/assets/images/logo_xlarge.png">
+  <meta property="og:image:alt"    content="Kohler Appliance logo">
+
+  <!-- ==== Favicons ==== -->
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- ==== Styles ==== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <title>Kohler Appliance – Appliance Store & Repair in Newland, NC</title>
+
+  <!-- ==== Structured Data (LocalBusiness) ==== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Kohler Appliance",
+    "image": "https://compudocnc.com/assets/images/logo_xlarge.png",
+    "url": "https://kohlerappliance.com/",
+    "telephone": "+1-828-733-5858",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "170 Linville Street",
+      "addressLocality": "Newland",
+      "addressRegion": "NC",
+      "postalCode": "28657",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "36.08446",
+      "longitude": "-81.92969"
+    },
+    "sameAs": [
+      "https://www.facebook.com/kohlerappliance",
+      "https://www.instagram.com/kohlerappliance"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ==== Hero (background image) ==== -->
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <a href="index.html" class="logo" aria-label="Kohler Appliance home">
+        <img src="./assets/img/kohlerlogonavy.png"
+             alt="Kohler Appliance logo"
+             loading="lazy">
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          ☰
+        </button>
+        <ul class="nav__list" id="primary-menu">
+          <li><a href="#home"   class="nav__link">Home</a></li>
+          <li><a href="#about"  class="nav__link">About Us</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__cta">
+        <h1>Kohler Appliance</h1>
+        <p class="tagline">High Country’s Most Trusted Appliance Store & Repair Service</p>
+        <a href="tel:+18287335858" class="btn btn--primary">Call Now (828) 733‑5858</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==== Main Content ==== -->
+  <main id="home">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about container">
+      <h2>About Us</h2>
+      <p>For more than two decades, Kohler Appliance has been the go‑to destination in the High Country for new appliances, professional installations, and fast, reliable repairs. Our family‑run shop prides itself on honest pricing, knowledgeable technicians, and a commitment to getting your home back to normal—quickly.</p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services container">
+      <h2>Our Services</h2>
+      <div class="services__grid">
+        <article class="card">
+          <h3>Appliance Sales</h3>
+          <p>Wide selection of refrigerators, ranges, washers, dryers, and more from top brands.</p>
+        </article>
+        <article class="card">
+          <h3>Repair & Maintenance</h3>
+          <p>Same‑day diagnostics, part‑ordering, and repair for all major appliance makes.</p>
+        </article>
+        <article class="card">
+          <h3>Installation</h3>
+          <p>Professional, code‑compliant installation for new appliances, including hookups and testing.</p>
+        </article>
+        <article class="card">
+          <h3>Service Plans</h4>
+          <p>Annual service contracts that give you priority scheduling and discounted parts.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAP SECTION -->
+    <section class="section map container">
+      <h2>Visit Our Store</h2>
+      <div class="map__wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.3703140628695!2d-81.9296915234312!3d36.08445997246001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8850938c16494b9b%3A0xba285b35c469ba95!2s170%20Linville%20St%2C%20Newland%2C%20NC%2028657!5e0!3m2!1sen!2sus!4v1684126348864!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Kohler Appliance location on Google Maps">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact container">
+      <h2>Contact Us</h2>
+      <address class="contact__info">
+        <p><strong>Address:</strong> 170 Linville Street, Newland, NC 28657</p>
+        <p><strong>Phone:</strong> <a href="tel:+18287335858">(828) 733‑5858</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@kohlerappliance.com">info@kohlerappliance.com</a></p>
+        <p><strong>Hours:</strong> Mon–Fri 9 am – 6 pm</p>
+      </address>
+
+      <form class="contact__form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input id="email" name="_replyto" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn--secondary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ==== Footer ==== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="yr"></span> Kohler Appliance – All Rights Reserved</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer__nav">
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ==== Scripts ==== -->
+  <script>
+    // Update footer year automatically
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Mobile navigation toggle
+    const toggle = document.querySelector('.nav__toggle');
+    const menu   = document.getElementById('primary-menu');
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      toggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('open');
+    });
+  </script>
+</body>
 </html>
